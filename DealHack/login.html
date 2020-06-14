@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="firebase-functions/public/css/style.css">
     
 
 
@@ -100,6 +100,9 @@
 
         <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-functions.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -118,5 +121,10 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     </script>
+
+    <script src="firebase-functions/public/js/app.js"></script>
+    <script src="firebase-functions/public/js/auth.js"></script>
+
+
 </body>
 </html>
