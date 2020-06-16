@@ -16,65 +16,47 @@
 
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-        <div class = "size-wrap">
-        <header class="site-navbar" role="banner">
-            <div class="site-navbar-top">
-              <div class="container">
-                <div class="row align-items-center">
-      
-                  <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
-                  
-                  </div>
-      
-                  <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-                    <div class="site-logo">
-                      <a href="#" class="js-logo-clone">DealHack</a>
+    
+ 
+
+    <div class = "limiter">
+        <div class="login-container">
+            <div class="wrap-login">
+                <form class="login-form">
+                    <span class="login-form-title">
+                        Welcome to Dealhack
+                    </span>
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="text" name="email" placeholder="Email">
                     </div>
-                  </div>
-      
-                  <div class="col-6 col-md-4 order-3 order-md-3 text-right">
-                
-                  </div>
-      
-                </div>
-              </div>
-            </div> 
 
-        </header>
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="password" name="password" placeholder="Password">
+                    </div>
 
-        <div>
-            <div>
-                <h2>Login</h2>
-                <form class = "login">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <button>Login</button>
-                    <p class="error"></p>
+                    <div class="login-container-form-btn">
+                        <div class ="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+                            <button class="login-form-btn">Login</button>
+                            
+                        </div>
+                       
+                    </div>
                 </form>
-                <div>No account?<a class="switch">Register instead</a></div>
-
             </div>
-
-            <div>
-                <h2>Register</h2>
-                <form class = "register">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <button>Register</button>
-                    <p class="error"></p>
-                </form>
-                <div>Got an account?<a class="switch">Login instead</a></div>
-
-            </div>
-
-
-
-
         </div>
 
-  </div>
+
+
+
+
+    </div>
+
+
 
 
 
@@ -104,7 +86,6 @@
     firebase.initializeApp(firebaseConfig);
     </script>
 
-    <script src="firebase-functions/public/js/app.js"></script>
-    <script src="firebase-functions/public/js/auth.js"></script>
+
 </body>
 </html>

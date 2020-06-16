@@ -5,6 +5,9 @@ const registerForm = document.querySelector('.register');
 const loginForm = document.querySelector('.login');
 const signOut = document.querySelector('.sign-out');
 
+console.log(authSwitchLinks);
+console.log(authModals);
+
 //toggle auth modals
 authSwitchLinks.forEach(link => {
     link.addEventListener('click', () => {
