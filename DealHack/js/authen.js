@@ -3,13 +3,14 @@ const Containers = document.querySelectorAll('.container')
 const Limiter = document.querySelector('.limiter');
 const loginForm = document.querySelector('.login-form');
 const signUpForm = document.querySelector('.sign-up-form');
-const IconLogo = document.querySelector('.icon_logo');
+
 
 
 
 console.log(SwitchLinks);
 console.log(Containers);
 console.log(Limiter);
+
 
 //Toggle Containers
 SwitchLinks.forEach(link => {
@@ -48,7 +49,16 @@ loginForm.addEventListener('submit',(e) => {
    firebase.auth().signInWithEmailAndPassword(email, password)
     .then((user) => {
         console.log('logged in', user);
+        // reset login form
         loginForm.reset();
+        
+        // set user localStorage
+        let email = user.user.email
+        let userName = email.substring(0, email.lastIndexOf('@'))
+        window.localStorage.setItem('userName', userName)
+
+        // redirect
+        location.replace('index.html');
     })
     .catch(error => {
         loginForm.querySelector('.error').textContent = error.message;
@@ -60,9 +70,12 @@ loginForm.addEventListener('submit',(e) => {
 });
 
 //auth listener
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
+// firebase.auth().onAuthStateChanged((user) => {
+//     if (user) {
+//         location.replace('index.html');
       
 
-    } 
-})
+//     } 
+// })
+
+
