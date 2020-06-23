@@ -8,6 +8,7 @@ newObj.forEach((value,index) => {
         title: value["Image"][0].alt,
         BestPrice: value["Store Price 1"][0].text,
         BestStore: value["Store Logo 1"][0].src,
+        StoreLink: value["Store Logo 1"][0].alt,
     })
 })
 
