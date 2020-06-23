@@ -22,7 +22,7 @@ const data = [
     },
     {
       Image: 'https://img.websosanh.vn/v2/users/root_product/images/dien-thoai-apple-iphone-11-pro/i5xktuukpkjhg.jpg?compress=85&width=200',
-      title: 'Điện thoại Apple Iphone 11 Pro Max (VN/A) - 64GB, 2 sim, 6.5 inch',
+      title: 'Điện thoại Apple Iphone 11 Pro Max - 64GB, 2 sim, 6.5 inch',
       BestPrice: '26.680.000 đ',
       BestStore: 'https://img.websosanh.vn/v2/users/logo/images/5wmj2nmqcx4s6.jpg?compress=85&width=110&height=40',
       StoreLink: 'https://shopee.vn'
