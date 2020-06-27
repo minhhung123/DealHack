@@ -212,7 +212,9 @@ a {
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
   .site-navbar .site-navigation .site-menu {
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+    padding-left: unset;
+  }
     .site-navbar .site-navigation .site-menu .active > a {
       color: #7971ea; }
     .site-navbar .site-navigation .site-menu a {
